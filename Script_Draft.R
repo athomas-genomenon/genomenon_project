@@ -73,8 +73,17 @@ variant_summary <- evidence_weighted %>%
   )
 
 #notes for building the lollipop plot itself:
+#what is y axis? number of variants?
 #shapes for variant classification
 #colors for variant type
 #colored in shape for if it meets ps3/not colored in
 #5 to 3 on x-axis (with exons/introns labeled)
-  
+
+lollipop <- ggplot(variant_summary, aes(x = mutation, y = weighted_probands))
+            
+#labs(lollipop, title =  "weighted proband variant plot", x = "variants", y = "number of weighted probands")
+
+
+
+
+#how to input json data?
